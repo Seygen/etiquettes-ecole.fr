@@ -23,10 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Récupération du dépôt
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configuration de Pages
         uses: actions/configure-pages@v5
+        with:
+          # Active GitHub Pages sur le dépôt s'il ne l'est pas déjà,
+          # et le règle sur « build from GitHub Actions ».
+          enablement: true
 
       - name: Préparation de l'artefact (site statique, racine du dépôt)
         uses: actions/upload-pages-artifact@v3
