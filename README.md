@@ -62,11 +62,15 @@ python3 -m http.server 8000
 # puis ouvrir http://localhost:8000/
 ```
 
-## Nom de domaine personnalisé (à faire plus tard)
+## Nom de domaine personnalisé
 
-Le fichier `CNAME` n'est **volontairement pas présent** : il ne doit être créé
-qu'une fois le domaine réellement acheté, avec le vrai nom de domaine dedans.
-La procédure est décrite dans le fichier `DOMAINE.md`.
+Adresse visée : **https://etiquettes-ecole.fr**
+
+Le fichier `CNAME` n'est **volontairement pas encore présent** : il ne doit être
+créé qu'une fois les enregistrements DNS en place, sinon le site devient
+injoignable pendant la propagation. La procédure complète — enregistrements DNS
+à créer, activation du HTTPS, et commandes de vérification — est dans
+[`DOMAINE.md`](DOMAINE.md).
 
 ## Licence
 
