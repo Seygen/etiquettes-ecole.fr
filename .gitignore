@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------
+# Données de classe — NE JAMAIS COMMITTER
+# L'application exporte les listes d'élèves en .json (prénoms,
+# dates de naissance, photos). Ces fichiers ne doivent jamais
+# se retrouver dans le dépôt.
+# ---------------------------------------------------------------
+*.json
+!package.json
+!.vscode/*.json
+ma-classe*.json
+classe*.json
+eleves*.json
+*.csv
+*.pdf
+sauvegarde*/
+donnees*/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environnement / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Divers
+node_modules/
+*.log
+*.bak
+*.tmp
